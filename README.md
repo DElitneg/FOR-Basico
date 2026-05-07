@@ -1,4 +1,4 @@
-# FOR-Basico
+# FOR/SWITCH-Basico
 Switch / Contador / Acumulador / FOR - Basico
 
 
