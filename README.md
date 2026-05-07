@@ -170,3 +170,51 @@ namespace ConsoleApplication1
 
 // 10. Análisis de Primalidad
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int opcion;
+            int contador;
+            int noPrimos;
+            contador = 0;
+            noPrimos = 0;
+
+            Console.WriteLine("Introduzca un numero entero positivo:");
+
+            opcion = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i<opcion; i++)
+            {
+                contador = contador + 1;
+                if (opcion%contador == 0)
+                {
+                    noPrimos = noPrimos + 1;
+                    Console.WriteLine("Es divisible por " + contador);
+                }               
+            }
+
+            if(noPrimos == 1)
+            {
+                Console.WriteLine(opcion+" Es primo");
+            }
+            else
+            {
+                Console.WriteLine("El numero no es primo, se puede dividir por " + noPrimos + " numeros");
+            }
+            
+
+            Console.ReadKey();
+            
+        }
+    }
+}
+
